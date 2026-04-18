@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #e6e6e6;
+        }
+
+        .container {
+            width: 700px;
+            margin: auto;
+            background: #f9f9f9;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        input, select, textarea {
+            padding: 5px;
+            width: 200px;
+        }
+
+        textarea {
+            width: 300px;
+        }
+
+        .small {
+            width: auto;
+        }
+
+        .qualification-table input {
+            width: 100%;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>STUDENT REGISTRATION FORM</h2>
+
+<form action="save.php" method="POST">
+
+<table>
+
+<tr>
+<td>FIRST NAME</td>
+<td><input type="text" name="fname"></td>
+</tr>
+
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" name="lname"></td>
+</tr>
+
+<tr>
+<td>DATE OF BIRTH</td>
+<td>
+<select name="day" class="small">
+<option>Day</option><option>1</option><option>2</option>
+</select>
+
+<select name="month" class="small">
+<option>Month</option><option>Jan</option><option>Feb</option>
+</select>
+
+<select name="year" class="small">
+<option>Year</option><option>2000</option><option>2001</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>EMAIL ID</td>
+<td><input type="email" name="email"></td>
+</tr>
+
+<tr>
+<td>MOBILE NUMBER</td>
+<td><input type="text" name="phone"></td>
+</tr>
+
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="gender" value="Male">
+Female <input type="radio" name="gender" value="Female">
+</td>
+</tr>
+
+<tr>
+<td>ADDRESS</td>
+<td><textarea name="address"></textarea></td>
+</tr>
+
+<tr>
+<td>CITY</td>
+<td><input type="text" name="city"></td>
+</tr>
+
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" name="pincode"></td>
+</tr>
+
+<tr>
+<td>STATE</td>
+<td><input type="text" name="state"></td>
+</tr>
+
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" name="country" value="India"></td>
+</tr>
+
+<tr>
+<td>HOBBIES</td>
+<td>
+Drawing <input type="checkbox" name="hobbies[]" value="Drawing">
+Singing <input type="checkbox" name="hobbies[]" value="Singing">
+Dancing <input type="checkbox" name="hobbies[]" value="Dancing">
+Sketching <input type="checkbox" name="hobbies[]" value="Sketching"><br>
+Others <input type="checkbox"> <input type="text">
+</td>
+</tr>
+
+<!-- QUALIFICATION -->
+<tr>
+<td colspan="2">
+
+<b>QUALIFICATION</b>
+
+<table border="1" class="qualification-table">
+<tr>
+<th>Sl.No</th>
+<th>Examination</th>
+<th>Board</th>
+<th>Percentage</th>
+<th>Year of Passing</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type="text" name="board1"></td>
+<td><input type="text" name="percent1"></td>
+<td><input type="text" name="year1"></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type="text" name="board2"></td>
+<td><input type="text" name="percent2"></td>
+<td><input type="text" name="year2"></td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type="text" name="board3"></td>
+<td><input type="text" name="percent3"></td>
+<td><input type="text" name="year3"></td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>Masters</td>
+<td><input type="text" name="board4"></td>
+<td><input type="text" name="percent4"></td>
+<td><input type="text" name="year4"></td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+
+<!-- COURSES -->
+<tr>
+<td>COURSES APPLIED FOR</td>
+<td>
+BCA <input type="radio" name="course" value="BCA">
+B.Com <input type="radio" name="course" value="B.Com">
+B.Sc <input type="radio" name="course" value="B.Sc">
+B.A <input type="radio" name="course" value="B.A">
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td class="buttons">
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</div>
+
+</body>
+</html>
