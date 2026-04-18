@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web site</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #e6e6e6;
+        }
+
+        /* Top blue bar */
+        .topbar {
+            background-color: #1a33cc;
+            padding: 5px;
+        }
+
+        .topbar input {
+            margin-left: 10px;
+            padding: 5px;
+            width: 150px;
+        }
+
+        .topbar button {
+            padding: 5px;
+        }
+
+        /* FULL PAGE LAYOUT */
+        .container {
+            display: flex;
+            width: 100%;
+            margin: 0;
+            background-color: white;
+            border-top: 1px solid black;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color: #ffff66;
+            padding: 15px;
+            min-height: 100vh;
+        }
+
+        .sidebar ul {
+            padding-left: 20px;
+        }
+
+        .sidebar li {
+            margin: 10px 0;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        /* Content */
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+
+        /* TITLE CENTERED */
+        .content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* IMAGE LEFT + ABOVE TEXT */
+        .content img {
+            width: 350px;
+            display: block;
+            margin-left: 0;
+            margin-bottom: 15px;
+        }
+
+        /* TEXT BELOW IMAGE */
+        .content p {
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Top bar -->
+    <div class="topbar">
+        <input type="text">
+        <button>Search...</button>
+    </div>
+
+    <!-- Layout -->
+    <div class="container">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Doc</a></li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <h2>My Web site</h2>
+
+            <img src="image.jpg" alt="image">
+
+            <p>
+                As the software industry moves into the second decade of the 21st century,
+                software quality is increasingly becoming essential to all businesses and
+                knowledge of software testing is becoming necessary for all software engineers.
+                The course focuses on the theoretical concepts of Software Testing with high
+                emphasis on inclusion of the practical context which is equally needed to
+                prepare the learner for the demands of this field in the workplace.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
